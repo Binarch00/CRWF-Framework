@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Password Forgot{% endblock %}
+
+{% block content %}
+
+<article class="box post">
+    <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+    <header>
+        <p>Recover your credentials here</p>
+    </header>
+
+    {% if error %}
+     <p class="errors" id="errors" >
+         <b><span class="button icon solid fa-exclamation-triangle">{{ error }}</span></b>
+     </p>
+    {% endif %}
+
+      <form method="post">
+        <label for="username">Email</label>
+        <input name="username" id="username" required>
+          <br><br>
+        <div class="g-recaptcha" data-sitekey="{{ sitekey }}"></div>
+		  <br>
+        <input type="submit" value="Send">
+      </form>
+
+</article>
+
+{% endblock %}

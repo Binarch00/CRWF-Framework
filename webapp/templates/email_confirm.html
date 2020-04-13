@@ -1,0 +1,7 @@
+{% extends 'email_base.html' %}
+
+{% block title %}{{ service_name }} Register{% endblock %}
+
+{% block content %}
+Welcome to <b>{{ service_name }}</b>, to activate your account <a href="{{activation_link}}" >CLICK HERE</a>
+{% endblock %}

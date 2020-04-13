@@ -1,0 +1,9 @@
+.idea/
+__pycache__/
+venv/
+*.pyc
+*~
+service.log
+private.pem
+public.pem
+main.db

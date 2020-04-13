@@ -1,0 +1,19 @@
+{% extends 'email_base.html' %}
+
+{% block title %}{{ service_name }} Password Reset{% endblock %}
+
+{% block content %}
+<p>
+A password reset process was started for your account at <b>{{ service_name }}</b> service.
+</p>
+
+<p>
+    If you don't requested the credential reset, just discard this message.
+</p>
+
+<p>
+    To set a new account credential <a href="{{reset_link}}" target="_blank" >CLICK HERE</a> and follow the instructions.
+    The link is valid for 1 hour.
+</p>
+
+{% endblock %}
