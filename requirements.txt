@@ -6,4 +6,4 @@ Flask-Login==0.4.1
 base58==1.0.3
 ecdsa==0.13.3
 pycryptodome==3.9.1
-requests==2.22.0
+requests==2.31.0
